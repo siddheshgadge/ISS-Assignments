@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment</title>
+	<link rel="stylesheet" type="text/css" href="assignment.css">
+</head>
+<body>
+
+	
+	<div id="registration-form">
+		<h1 class="heading">Student Registration</h1>
+	<form action="#" name="formReg" method="get" onsubmit="validateform()">
+		<label for = "firstname">First Name : </label>
+		<input type="text" name="firstname" autocomplete="off" autofocus > <br> <br>
+
+		<label for = "lastname">Last Name : </label>
+		<input type="text" name="lastname" autocomplete="off" > <br> <br>
+
+		<label for = "gender">Gender : </label>
+		<input type="radio" name="gender" value="male">Male
+		<input type="radio" name="gender" value="female">Female
+		<input type="radio" name="gender" value="other" checked>other<br> <br>
+
+		<label for="DOB">Date of birth:</label>
+		<input type="date" name="DOB"> <br><br>
+
+		<label for="address">Address : </label><br>
+		<textarea name="address" id="address" rows="5" cols="30" >
+		</textarea><br><br>
+
+		<label for="phone">Phone No :</label>
+		<input type="text" id="countryCode" name="countryCode" value="+91" size="2" readonly>
+		<input type="tel" name="phone" autocomplete="off" ><br><br>
+
+		<label for="department">Department :</label>
+		<select name="department">
+			<option value="Computer Science">Computer Science</option>
+			<option value="Information Technology">Information Technology</option>
+			<option value="Mechanical Engineering">Mechanical Engineering</option>
+			<option value="Electronics Engineering">Electronics Engineering</option>
+			<option value="Instrumental Engineering">Instrumental Engineering</option>
+		</select> <br> <br>
+
+		<label for="sports">Sports : </label>
+		<input list="sports" name="sports" autocomplete="off">
+			<datalist id="sports">
+		    <option value="Cricket">
+		    <option value="Football">
+		    <option value="Volleyball">
+		    <option value="Chess">
+		    <option value="Carrom">
+		  </datalist> <br><br>
+
+		<label for="marksheet">Upload your previous marksheet : </label>
+		<input type="file" name="marksheet" accept="image/*,.pdf"><br> <br>
+
+		<label for="email">Email : </label>
+		<input type="email" name="email" autocomplete="off" > <br> <br>
+
+		<label for="password">Password : </label>
+		<input type="password" name="password" placeholder="*****" > <br> <br>
+
+		<button type="submit">Submit</button>
+		<button type="reset" name="reset">Reset</button>
+
+	</form>
+	</div>
+
+	<script type="text/javascript" src="validation.js"></script>
+
+</body>
+</html>
